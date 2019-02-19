@@ -4,9 +4,11 @@
   function NoteListView(NoteList) {}
 
   NoteListView.prototype.printNotes = function(NoteList) {
+    var noteHTML = '';
     for(var i = 0; i < NoteList.list.length; i ++) {
-      return ('<div><li>' + NoteList.list[i] + '</div></li>');
+      noteHTML += ('<div><li>' + NoteList.list[i] + '</div></li>');
     }
+    return noteHTML;
   };
   
   exports.NoteListView = NoteListView;

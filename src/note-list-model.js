@@ -7,13 +7,11 @@
   
   NoteList.prototype.addToList = function(note) {
     return this.list.push(note);
-  };
+  }
 
   NoteList.prototype.printList = function(){
-    for (var i in this.list) {
-      return this.list[i];
-    }
-  };
+    return this.list;
+  }
 
   exports.NoteList = NoteList;
 

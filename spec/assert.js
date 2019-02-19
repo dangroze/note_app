@@ -5,7 +5,7 @@ var assert = {
     if (!assertionToCheck) {
       throw new Error("Assertion failed: " + assertionToCheck + " is not truthy");
     } else {
-      throw 'Test passed! YAY!'
+      throw 'Test passed! YAY!!!'
     }
-  }
+  },
 };
